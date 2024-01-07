@@ -1,4 +1,3 @@
-import React from "react";
 import { useContext } from "react";
 import MyContext from "../MyContext";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -77,7 +76,7 @@ function NavBar() {
           </a>
           <button
             onClick={() => setIsNavBarOpen((prev) => !prev)}
-            className=" navBarMenuBtn"
+            className="navBarMenuBtn"
           >
             <AiOutlineMenu />
           </button>
@@ -89,12 +88,12 @@ function NavBar() {
               >
                 <AiOutlineClose />
               </button>
-              <ul className=" navBarOpenMenu absolute  flex flex-col gap-3 items-start w-72 rounded bg-otfMaroon top-10 p-5">
+              <ul className=" navBarOpenMenu absolute">
                 {linksAll.map(({ title, link }) => {
                   return (
                     <a
                       key={title}
-                      className=" navBar-links navBarOpenLinks hover:bg-otfImageGrey p-2 rounded flex justify-between w-full items-center"
+                      className=" navBar-links navBarOpenLinks"
                       href={link}
                     >
                       <h1>{title}</h1>
