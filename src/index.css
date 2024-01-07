@@ -23,7 +23,7 @@
   justify-content: center;
   align-items: center;
   color: #74605a;
-  padding: 3em;
+  padding: 0em 3em;
 
   height: 100px;
 }
@@ -31,9 +31,20 @@
 .navBar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #74605a;
   width: 100%;
   font-size: 0.8em;
+  height: 100px;
+}
+
+.smallNavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #74605a;
+  width: 100%;
+  font-size: 1em;
   height: 100px;
 }
 
@@ -46,14 +57,73 @@
 .navBar-links:hover {
   color: var(--accent-details);
   transition: 0.5s;
+  cursor: pointer;
+}
+
+.navBarMenuBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5em;
+  color: var(--primary-headings);
+}
+
+.navBarMenuBtn:hover {
+  color: var(--accent-details);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.navBarOpenContainer {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+}
+
+.navBarOpenMenu {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--accent-background);
+  font-size: 1em;
+  height: 105vh;
+}
+
+.navBarCloseBtn {
+  z-index: 11;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5em;
+  color: var(--primary-headings);
+  transition-timing-function: ease-in;
+}
+
+.navBarOpenLinks {
+  font-size: 0.5em;
 }
 
 #navBar-decor {
   padding: 0 1em;
 }
 
-#navBar-title {
+#navBar-title-big {
   display: flex;
   gap: 1.2em;
-  padding: 0 100px;
+  padding: 0 10%;
+}
+
+#navBar-title-small {
+  display: flex;
+  gap: 1.2em;
 }

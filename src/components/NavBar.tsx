@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import MyContext from "../MyContext";
-import { LuAlignJustify } from "react-icons/lu";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 function NavBar() {
   const { screenWidth, isNavBarOpen, setIsNavBarOpen } = useContext(MyContext)!;
@@ -51,7 +51,7 @@ function NavBar() {
               {link.title}
             </a>
           ))}
-          <a className="navBar-links" id="navBar-title" href="/">
+          <a className="navBar-links" id="navBar-title-big" href="/">
             {titleDecor.map((decor) => (
               <span className="navBar-links" id="navBarDecor">
                 {decor}
@@ -66,8 +66,8 @@ function NavBar() {
           ))}
         </div>
       ) : (
-        <div className="flex flex-col gap-2 justify-center items-center relative rounded">
-          <a className="navBar-links" id="navBar-title" href="/">
+        <div className="smallNavBar ">
+          <a className="navBar-links" id="navBar-title-small" href="/">
             {titleDecor.map((decor) => (
               <span className="navBar-links" id="navBarDecor">
                 {decor}
@@ -76,24 +76,32 @@ function NavBar() {
           </a>
           <button
             onClick={() => setIsNavBarOpen((prev) => !prev)}
-            className="flex justify-center items-center gap-2 text-xl"
+            className=" navBarMenuBtn"
           >
-            Menu <LuAlignJustify />
+            <AiOutlineMenu />
           </button>
           {isNavBarOpen && (
-            <ul className=" absolute  flex flex-col gap-3 items-start w-72 rounded bg-otfMaroon top-10 p-5">
-              {linksAll.map(({ title, link }) => {
-                return (
-                  <a
-                    key={title}
-                    className=" hover:bg-otfImageGrey p-2 rounded flex justify-between w-full items-center"
-                    href={link}
-                  >
-                    <h1>{title}</h1>
-                  </a>
-                );
-              })}
-            </ul>
+            <div className="navBarOpenContainer">
+              <button
+                onClick={() => setIsNavBarOpen((prev) => !prev)}
+                className="navBarCloseBtn"
+              >
+                <AiOutlineClose />
+              </button>
+              <ul className=" navBarOpenMenu absolute  flex flex-col gap-3 items-start w-72 rounded bg-otfMaroon top-10 p-5">
+                {linksAll.map(({ title, link }) => {
+                  return (
+                    <a
+                      key={title}
+                      className=" navBar-links navBarOpenLinks hover:bg-otfImageGrey p-2 rounded flex justify-between w-full items-center"
+                      href={link}
+                    >
+                      <h1>{title}</h1>
+                    </a>
+                  );
+                })}
+              </ul>
+            </div>
           )}
         </div>
       )}
