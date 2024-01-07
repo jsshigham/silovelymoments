@@ -1,0 +1,59 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: var(--primary-background);
+
+  --primary-background: #f6f5f1;
+  --primary-headings: #74605a;
+  --primary-paragraphs: #6c6c6c;
+  --primary-details: #d3c8c4;
+  --accent-background: #e8e3df;
+  --accent-headings: #74605a;
+  --accent-paragraphs: #6c6c6c;
+  --accent-details: #c5bab6;
+  --button-background: #967f78;
+  --button-text: #ffffff;
+  --button-background-hover: #826b64;
+  --button-text-hover: #ffffff;
+}
+
+.navBarHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #74605a;
+  padding: 3em;
+
+  height: 100px;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  color: #74605a;
+  width: 100%;
+  font-size: 0.8em;
+  height: 100px;
+}
+
+.navBar-links {
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-headings);
+  text-decoration: none;
+}
+
+.navBar-links:hover {
+  color: var(--accent-details);
+  transition: 0.5s;
+}
+
+#navBar-decor {
+  padding: 0 1em;
+}
+
+#navBar-title {
+  display: flex;
+  gap: 1.2em;
+  padding: 0 100px;
+}
