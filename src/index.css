@@ -22,9 +22,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #74605a;
+  color: var(--primary-headings);
   padding: 0em 3em;
-
   height: 100px;
 }
 
@@ -32,7 +31,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #74605a;
+  color: var(--primary-headings);
   width: 100%;
   font-size: 0.8em;
   height: 100px;
@@ -42,7 +41,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #74605a;
+  color: var(--primary-headings);
   width: 100%;
   font-size: 0.8em;
   height: 100px;
@@ -66,7 +65,6 @@
   align-items: center;
   border: none;
   background-color: transparent;
-  font-size: 1.5em;
   color: var(--primary-headings);
   font-size: 2em;
 }
