@@ -44,28 +44,7 @@ function NavBar() {
 
   return (
     <header className="navBarHeader">
-      {!smallScreenSize ? (
-        <div className="navBar">
-          {links1.map((link) => (
-            <a className="navBar-links" key={link.title} href={link.link}>
-              {link.title}
-            </a>
-          ))}
-          <a className="navBar-links" id="navBar-title-big" href="/">
-            {titleDecor.map((decor) => (
-              <span className="navBar-links" id="navBarDecor">
-                {decor}
-              </span>
-            ))}
-          </a>
-
-          {links2.map((link) => (
-            <a className="navBar-links" key={link.title} href={link.link}>
-              {link.title}
-            </a>
-          ))}
-        </div>
-      ) : (
+      {smallScreenSize ? (
         <div className="smallNavBar ">
           <a className="navBar-links" id="navBar-title-small" href="/">
             {titleDecor.map((decor) => (
@@ -103,6 +82,27 @@ function NavBar() {
               </ul>
             </div>
           )}
+        </div>
+      ) : (
+        <div className="navBar">
+          {links1.map((link) => (
+            <a className="navBar-links" key={link.title} href={link.link}>
+              {link.title}
+            </a>
+          ))}
+          <a className="navBar-links" id="navBar-title-big" href="/">
+            {titleDecor.map((decor) => (
+              <span className="navBar-links" id="navBarDecor">
+                {decor}
+              </span>
+            ))}
+          </a>
+
+          {links2.map((link) => (
+            <a className="navBar-links" key={link.title} href={link.link}>
+              {link.title}
+            </a>
+          ))}
         </div>
       )}
     </header>
