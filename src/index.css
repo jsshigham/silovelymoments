@@ -75,6 +75,10 @@
   cursor: pointer;
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 .navBarOpenContainer {
   position: absolute;
   top: -50px;
@@ -85,6 +89,7 @@
 }
 
 .navBarOpenMenu {
+  margin: auto;
   padding-top: 120px;
   display: flex;
   flex-direction: column;
