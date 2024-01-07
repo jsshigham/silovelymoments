@@ -49,6 +49,7 @@
 
 .navBar-links {
   font-family: "Montserrat", sans-serif;
+
   color: var(--primary-headings);
   text-decoration: none;
 }
@@ -135,5 +136,28 @@ ul {
 
 #navBar-title-small {
   display: flex;
-  gap: 1.2em;
+  gap: 0.5em;
+}
+
+.footer {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-headings);
+  opacity: 90%;
+  font-size: 0.8em;
+}
+
+.scrollBtn {
+  position: fixed;
+  bottom: 1em;
+  right: 0.75em;
+  border: none;
+  background: transparent;
+  color: var(--primary-headings);
+  font-size: 1.5em;
+  cursor: pointer;
 }

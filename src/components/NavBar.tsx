@@ -45,7 +45,7 @@ function NavBar() {
   return (
     <header className="navBarHeader">
       {smallScreenSize ? (
-        <div className="smallNavBar ">
+        <nav className="smallNavBar ">
           <a className="navBar-links" id="navBar-title-small" href="/">
             {titleDecor.map((decor) => (
               <span className="navBar-links" id="navBarDecor">
@@ -82,9 +82,9 @@ function NavBar() {
               </ul>
             </div>
           )}
-        </div>
+        </nav>
       ) : (
-        <div className="navBar">
+        <nav className="navBar">
           {links1.map((link) => (
             <a className="navBar-links" key={link.title} href={link.link}>
               {link.title}
@@ -103,7 +103,7 @@ function NavBar() {
               {link.title}
             </a>
           ))}
-        </div>
+        </nav>
       )}
     </header>
   );

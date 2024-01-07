@@ -7,6 +7,7 @@ import KindWords from "./pages/KindWords";
 import Moments from "./pages/Moments";
 import Sessions from "./pages/Sessions";
 import { MyContextProvider } from "./MyContext";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/moments" element={<Moments />} />
           <Route path="/sessions" element={<Sessions />} />
         </Routes>
+        <Footer />
       </Router>
     </MyContextProvider>
   );
