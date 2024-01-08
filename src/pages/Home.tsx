@@ -1,9 +1,9 @@
-import { useContext } from "react";
-import MyContext from "../MyContext";
+// import { useContext } from "react";
+// import MyContext from "../MyContext";
 import "./homePage.css";
 
 function Home() {
-  const { screenWidth } = useContext(MyContext)!;
+  // const { screenWidth } = useContext(MyContext)!;
 
   return (
     <main className="homePage">
