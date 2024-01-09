@@ -3,6 +3,10 @@
   line-height: 1.5;
   font-weight: 400;
   background-color: var(--primary-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
   --primary-background: #f6f5f1;
   --primary-headings: #74605a;
@@ -141,7 +145,6 @@ ul {
 
 .footer {
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,4 +163,24 @@ ul {
   color: var(--primary-headings);
   font-size: 1.5em;
   cursor: pointer;
+}
+
+@media screen and (max-width: 575px) {
+  .navBarHeader {
+    padding: 0 1em;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .scrollBtn {
+    position: unset;
+    right: unset;
+    bottom: unset;
+  }
 }
