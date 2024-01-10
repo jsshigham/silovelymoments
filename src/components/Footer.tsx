@@ -13,7 +13,7 @@ export const Footer = () => {
 
   return (
     <footer>
-      <div className="footer">
+      <div className="footerDiv">
         <MdOutlineCopyright /> <p>{year} si.lovelymoments</p>{" "}
       </div>
       <button className="scrollBtn" onClick={scrollToTop}>

@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 100vw;
 
   --primary-background: #f6f5f1;
   --primary-headings: #74605a;
@@ -20,6 +21,10 @@
   --button-text: #ffffff;
   --button-background-hover: #826b64;
   --button-text-hover: #ffffff;
+}
+
+body {
+  width: 100%;
 }
 
 .navBarHeader {
@@ -143,7 +148,14 @@ ul {
   gap: 0.5em;
 }
 
-.footer {
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.footerDiv {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -155,10 +167,12 @@ ul {
 }
 
 .scrollBtn {
-  position: fixed;
+  /* position: fixed;
   bottom: 1em;
-  right: 0.75em;
+  right: 0.75em; */
+  align-self: flex-end;
   border: none;
+  padding: 0 3em;
   background: transparent;
   color: var(--primary-headings);
   font-size: 1.5em;
@@ -183,8 +197,8 @@ ul {
   }
 
   .scrollBtn {
-    position: unset;
+    /* position: unset;
     right: unset;
-    bottom: unset;
+    bottom: unset; */
   }
 }
