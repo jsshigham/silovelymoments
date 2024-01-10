@@ -156,7 +156,9 @@ footer {
 }
 
 .footerDiv {
+  padding: 0 0 0 4em;
   width: 100%;
+  align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,12 +169,9 @@ footer {
 }
 
 .scrollBtn {
-  /* position: fixed;
-  bottom: 1em;
-  right: 0.75em; */
   align-self: flex-end;
   border: none;
-  padding: 0 3em;
+  margin: 0 2em 0 0;
   background: transparent;
   color: var(--primary-headings);
   font-size: 1.5em;
@@ -196,9 +195,15 @@ footer {
     gap: 1em;
   }
 
+  .footerDiv {
+    padding: 0 0 0 0;
+  }
+
   .scrollBtn {
-    /* position: unset;
-    right: unset;
-    bottom: unset; */
+    margin: 0;
+  }
+
+  .scrollBtn {
+    align-self: unset;
   }
 }

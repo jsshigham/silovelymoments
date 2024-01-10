@@ -1,0 +1,23 @@
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2em;
+  align-items: center;
+  width: 100vw;
+}
+
+section {
+  width: 100%;
+}
+
+#sieraWithCamera {
+  width: 22vw;
+  border-radius: 11vw;
+  image-resolution: 50%;
+}
+
+#cheersInTheWoods {
+  width: 30vw;
+}
