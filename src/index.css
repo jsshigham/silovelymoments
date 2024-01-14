@@ -77,6 +77,8 @@ body {
   background-color: transparent;
   color: var(--primary-headings);
   font-size: 2em;
+  padding-block: unset;
+  padding-inline: unset;
 }
 
 .navBarMenuBtn:hover {
@@ -180,7 +182,7 @@ footer {
 
 @media screen and (max-width: 1023px) {
   .navBarHeader {
-    padding: 0;
+    padding: 0 1em;
   }
 
   footer {
