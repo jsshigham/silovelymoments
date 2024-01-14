@@ -180,7 +180,7 @@ footer {
 
 @media screen and (max-width: 1023px) {
   .navBarHeader {
-    padding: 0 1em;
+    padding: 0;
   }
 
   footer {
