@@ -178,13 +178,9 @@ footer {
   cursor: pointer;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 1023px) {
   .navBarHeader {
     padding: 0 1em;
-  }
-
-  :root {
-    padding: 0 0.5em;
   }
 
   footer {

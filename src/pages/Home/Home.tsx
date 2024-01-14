@@ -28,6 +28,7 @@ function Home() {
       <section className="homePageSection2">
         {section2Images.map((image) => (
           <img
+            key={image.title}
             className="section2Img"
             src={`/homePage/section2/${image.title}.jpeg`}
             alt={image.alt}
@@ -48,6 +49,7 @@ function Home() {
         <div className="homePageSection3ImagesSmall">
           {section3ImagesSmall.map((image) => (
             <img
+              key={image.title}
               className="section3ImgSmall"
               src={`/homePage/section3/${image.title}.jpeg`}
               alt={image.alt}

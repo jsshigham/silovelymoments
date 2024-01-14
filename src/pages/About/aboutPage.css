@@ -3,21 +3,119 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 2em;
   align-items: center;
-  width: 100vw;
+  width: 97vw;
 }
 
 section {
   width: 100%;
+  display: grid;
+  grid-template-columns:
+    1fr repeat(
+      24,
+      min(
+        calc(
+          (1400px + calc(calc(calc(min(95vw, 1400px) - 40px * 2) / 24) / 4)) /
+            24 - calc(calc(calc(min(95vw, 1400px) - 40px * 2) / 24) / 4)
+        ),
+        calc(
+          (
+              100% - 40px * 2 +
+                calc(calc(calc(min(95vw, 1400px) - 40px * 2) / 24) / 4)
+            ) / 24 - calc(calc(calc(min(95vw, 1400px) - 40px * 2) / 24) / 4)
+        )
+      )
+    )
+    1fr;
+  grid-template-rows: repeat(
+    37,
+    calc(
+      calc(
+          calc(calc(min(95vw, 1400px) - 40px * 2) / 24) -
+            calc(calc(calc(min(95vw, 1400px) - 40px * 2) / 24) / 4)
+        ) / 3 * 2
+    ),
+    auto
+  );
+  row-gap: calc(calc(calc(min(95vw, 1400px) - 40px * 2) / 24) / 4);
+  column-gap: calc(calc(calc(min(95vw, 1400px) - 40px * 2) / 24) / 4);
+  color: var(--primary-headings);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+#sieraWithCameraDiv {
+  grid-area: 1/2/21/10;
+  height: 110vh;
+  width: 28vw;
+  border-radius: 14vw;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
 }
 
 #sieraWithCamera {
-  width: 22vw;
-  border-radius: 11vw;
-  image-resolution: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#aboutDescription {
+  /* width: 50vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: 3/10/18/26;
+  z-index: 1;
+}
+
+.descriptionTitle {
+  font-weight: 600;
+  font-size: 2em;
+}
+.descriptionSubtitle {
+  font-size: 1.5em;
+  font-weight: 100;
+  opacity: 80%;
+}
+.mainText {
+  font-family: "Lora", serif;
+  font-weight: 100;
+  text-align: left;
+  opacity: 85%;
+}
+
+#cheersInTheWoodsDiv {
+  grid-area: 17/8/35/26;
+  z-index: 0;
 }
 
 #cheersInTheWoods {
-  width: 30vw;
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #sieraWithCameraDiv {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+  }
+
+  #aboutDescription {
+    gap: 1em;
+    grid-area: unset;
+  }
+
+  .mainText {
+    text-align: center;
+  }
 }

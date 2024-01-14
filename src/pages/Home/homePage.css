@@ -17,7 +17,7 @@ main {
 }
 
 .logo {
-  width: 100vw;
+  width: 99vw;
 }
 
 .homePageSection2 {
@@ -94,7 +94,7 @@ main {
   width: 90%;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 1023px) {
   .homePageSection2 {
     flex-direction: column;
   }

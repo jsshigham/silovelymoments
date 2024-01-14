@@ -10,8 +10,6 @@ function NavBar() {
     smallScreenSize = true;
   }
 
-  console.log(screenWidth);
-
   const links1 = [
     { title: "HOME", link: "/" },
     { title: "ABOUT", link: "/about" },
@@ -47,8 +45,8 @@ function NavBar() {
       {smallScreenSize ? (
         <nav className="smallNavBar ">
           <a className="navBar-links" id="navBar-title-small" href="/">
-            {titleDecor.map((decor) => (
-              <span className="navBar-links" id="navBarDecor">
+            {titleDecor.map((decor, index) => (
+              <span key={index} className="navBar-links" id="navBarDecor">
                 {decor}
               </span>
             ))}
@@ -91,8 +89,8 @@ function NavBar() {
             </a>
           ))}
           <a className="navBar-links" id="navBar-title-big" href="/">
-            {titleDecor.map((decor) => (
-              <span className="navBar-links" id="navBarDecor">
+            {titleDecor.map((decor, index) => (
+              <span key={index} className="navBar-links" id="navBarDecor">
                 {decor}
               </span>
             ))}
