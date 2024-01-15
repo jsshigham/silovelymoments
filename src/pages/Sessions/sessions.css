@@ -67,6 +67,63 @@
   font-size: min(0.875rem, 1rem + -0.14vh);
 }
 
+.detailsSection {
+  padding-top: 100px;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: var(--secondary-font-family);
+  font-size: min(0.875rem, 1rem + -0.14vh);
+  text-align: left;
+}
+
+.detailsSection p {
+  width: 100%;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.backgroundImgSection {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  min-height: 90vh;
+  background: #fff url(../../../public/sessionsPage/backgroundImgCopy.jpeg)
+    no-repeat 20% 30%;
+  color: #fff;
+}
+
+.bottomTextSm {
+  font-size: min(0.875rem, 1rem + -0.14vh);
+  font-weight: 200;
+}
+
+.bottomTextLg {
+  width: 30%;
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.bottomTextLink {
+  text-decoration: none;
+  padding: 10px 50px;
+  border: #fff 1px solid;
+  color: #fff;
+}
+
+.bottomTextLink:hover {
+  color: var(--primary-headings);
+  background-color: #fff;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1375px) {
   .section1ImgDiv {
     height: unset;
@@ -92,5 +149,13 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2em;
+  }
+
+  .backgroundImgSection {
+    min-height: 75vh;
+  }
+
+  .bottomTextLg {
+    width: 60%;
   }
 }
