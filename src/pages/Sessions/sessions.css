@@ -1,0 +1,96 @@
+.sessionsHeading {
+  font-weight: 200;
+  font-size: 1em;
+  padding-top: 2em;
+}
+
+.sessionsSection1 {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section1Grid {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section1ImgDiv {
+  height: 30vw;
+  width: 30vw;
+  overflow: hidden;
+  display: relative;
+}
+
+.section1Img {
+  width: 30vw;
+  top: -20%;
+  object-fit: cover;
+  position: relative;
+}
+
+.section1TitleAndTypes {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section1Title {
+  height: 8vw;
+  font-weight: 200;
+  font-size: 2.5em;
+  margin-block-start: unset;
+  margin-block-end: unset;
+}
+
+.section1SessionTypes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  font-size: min(0.875rem, 1rem + -0.14vh);
+  font-family: var(--secondary-font-family);
+}
+
+.height {
+  height: 8vw;
+}
+
+.pricing {
+  font-family: var(--secondary-font-family);
+  font-size: min(0.875rem, 1rem + -0.14vh);
+}
+
+@media screen and (max-width: 1375px) {
+  .section1ImgDiv {
+    height: unset;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .section1ImgDiv {
+    width: 90vw;
+    height: 90vw;
+  }
+  .section1Img {
+    width: 100%;
+  }
+  .section1Grid {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  .section1TitleAndTypes {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2em;
+  }
+}
