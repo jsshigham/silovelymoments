@@ -4,7 +4,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact";
 import KindWords from "./pages/KindWords/KindWords";
-import Moments from "./pages/Moments";
+import Moments from "./pages/Moments/Moments";
 import Sessions from "./pages/Sessions";
 import { MyContextProvider } from "./MyContext";
 import { Footer } from "./components/Footer";

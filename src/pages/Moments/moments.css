@@ -1,0 +1,83 @@
+.momentsTitle {
+  color: var(--primary-headings);
+  font-family: var(--primary-font-family);
+  font-size: 2em;
+  font-weight: 200;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.momentsTileRow {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.momentTypeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.momentsTile {
+  width: 20vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+
+.momentsTileImgDiv {
+  width: 20vw;
+  height: 30vw;
+  overflow: hidden;
+  display: relative;
+}
+
+.momentsTileImg {
+  width: 26vw;
+  left: -3vw;
+  object-fit: cover;
+  position: relative;
+}
+
+.momentsTileTitle {
+  font-family: var(--primary-font-family);
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.momentsLogo {
+  max-width: 80vw;
+}
+
+@media screen and (max-width: 1023px) {
+  .momentsTileRow {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .momentsTile {
+    width: 100%;
+  }
+
+  .momentsTileImgDiv {
+    width: 100%;
+    height: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .momentsTileImg {
+    width: 100%;
+    left: unset;
+    object-fit: unset;
+    position: unset;
+  }
+}
