@@ -55,8 +55,11 @@ section {
 }
 
 #sieraWithCamera {
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
+  top: -20%;
+  left: -15%;
+  position: relative;
   object-fit: cover;
 }
 
@@ -105,9 +108,15 @@ section {
   }
 
   #sieraWithCameraDiv {
-    height: 300px;
-    width: 300px;
+    height: 50vw;
+    width: 50vw;
     border-radius: 50%;
+  }
+
+  #sieraWithCamera {
+    width: 120%;
+    height: unset;
+    top: -65%;
   }
 
   #aboutDescription {
