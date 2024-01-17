@@ -4,7 +4,10 @@ function Contact() {
   return (
     <main>
       <section className="section1">
-        <img src="/aboutPage/sieraWithCamera.jpeg" alt="Siera with camera" />
+        <img
+          src="/contactPage/sieraWithCameraStanding.jpeg"
+          alt="Siera with camera"
+        />
         <div className="section1Right">
           <span className="section1RightHeading">
             DON'T HESITATE, <br /> CONTACT ME FOR ANY <br /> INFORMATION
