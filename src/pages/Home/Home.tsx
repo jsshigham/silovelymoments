@@ -64,7 +64,7 @@ function Home() {
         alt="Father, Mother, Daughter and Son enjoying the beach"
         id="section4ImgLarge"
       />
-      <span className="homePageText">CAPTURE THE EMOTION</span>
+      <span className="homePageText">CAPTURE THE LOVE</span>
       <ImageSlider />
     </main>
   );

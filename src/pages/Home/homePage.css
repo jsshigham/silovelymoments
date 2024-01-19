@@ -100,6 +100,7 @@ main {
   gap: 3em;
   justify-content: center;
   align-items: center;
+
   width: 90vw;
 }
 
@@ -181,11 +182,16 @@ main {
     width: 90%;
   }
 
+  .sliderSection {
+    height: 80vh;
+  }
+
   .currentImgLg {
     width: 80vw;
     height: unset;
   }
   .slidesDiv2 {
+    justify-self: flex-end;
     height: 12vh;
     width: 90vw;
   }
