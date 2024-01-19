@@ -1,5 +1,6 @@
 // import { useContext } from "react";
 // import MyContext from "../MyContext";
+import ImageSlider from "../../components/ImageSlider/ImageSlider";
 import "./homePage.css";
 
 function Home() {
@@ -63,6 +64,8 @@ function Home() {
         alt="Father, Mother, Daughter and Son enjoying the beach"
         id="section4ImgLarge"
       />
+      <span className="homePageText">CAPTURE THE EMOTION</span>
+      <ImageSlider />
     </main>
   );
 }

@@ -47,7 +47,7 @@ function Contact() {
               href={`https://silovelymoments.etsy.com/`}
               className="section1Btn"
             >
-              LANDSCAPES AVAILIBLE THROUGH ETSY HERE
+              LANDSCAPES AVAILIBLE THROUGH ETSY
             </a>
           </p>
         </div>
