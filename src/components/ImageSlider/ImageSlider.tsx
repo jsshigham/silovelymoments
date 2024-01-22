@@ -61,7 +61,7 @@ const ImageSlider = () => {
           return (
             <div
               className={index === currentImg ? "imgDiv2 active" : "imgDiv2"}
-              key={index}
+              key={image}
             >
               {index === currentImg && (
                 <>
