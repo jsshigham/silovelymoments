@@ -1,9 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { imageSliderImgs } from "./sliderData";
 
 const ImageSlider = () => {
   const [currentImg, setCurrentImg] = useState(Math.floor(Math.random() * 94));
+
+  useEffect(() => {
+    const intervalId = setInterval(nextImg, 7000);
+
+    return () => clearInterval(intervalId);
+  });
 
   const nextImg = () =>
     currentImg === 93 ? setCurrentImg(0) : setCurrentImg(currentImg + 1);
@@ -33,7 +39,10 @@ const ImageSlider = () => {
       <div className="slidesDiv1">
         {imageSliderImgs.map((image, index) => {
           return (
-            <div className={index === currentImg ? "imgDiv active" : "imgDiv"}>
+            <div
+              className={index === currentImg ? "imgDiv active" : "imgDiv"}
+              key={index}
+            >
               {index === currentImg && (
                 <img
                   className="currentImgLg"
@@ -48,31 +57,52 @@ const ImageSlider = () => {
       <div className="slidesDiv2">
         <IoIosArrowBack onClick={lastImg} className="arrow" />
 
-        <img
-          src={`/homePage/slideShowImgs/img${minus2Slide}.jpg`}
-          alt=""
-          onClick={() => setCurrentImg(minus2Slide)}
-        />
-        <img
-          src={`/homePage/slideShowImgs/img${
-            currentImg === 0 ? 93 : currentImg - 1
-          }.jpg`}
-          alt=""
-          onClick={() => setCurrentImg(currentImg === 0 ? 93 : currentImg - 1)}
-        />
-        <img src={`/homePage/slideShowImgs/img${currentImg}.jpg`} alt="" />
-        <img
-          src={`/homePage/slideShowImgs/img${
-            currentImg === 93 ? 0 : currentImg + 1
-          }.jpg`}
-          alt=""
-          onClick={() => setCurrentImg(currentImg === 93 ? 0 : currentImg + 1)}
-        />
-        <img
-          src={`/homePage/slideShowImgs/img${plus2Slide}.jpg`}
-          alt=""
-          onClick={() => setCurrentImg(plus2Slide)}
-        />
+        {imageSliderImgs.map((image, index) => {
+          return (
+            <div
+              className={index === currentImg ? "imgDiv2 active" : "imgDiv2"}
+              key={index}
+            >
+              {index === currentImg && (
+                <>
+                  <img
+                    src={`/homePage/slideShowImgs/img${minus2Slide}.jpg`}
+                    alt=""
+                    onClick={() => setCurrentImg(minus2Slide)}
+                  />
+                  <img
+                    src={`/homePage/slideShowImgs/img${
+                      currentImg === 0 ? 93 : currentImg - 1
+                    }.jpg`}
+                    alt=""
+                    onClick={() =>
+                      setCurrentImg(currentImg === 0 ? 93 : currentImg - 1)
+                    }
+                  />
+                  <img
+                    src={`/homePage/slideShowImgs/img${currentImg}.jpg`}
+                    alt=""
+                  />
+                  <img
+                    src={`/homePage/slideShowImgs/img${
+                      currentImg === 93 ? 0 : currentImg + 1
+                    }.jpg`}
+                    alt=""
+                    onClick={() =>
+                      setCurrentImg(currentImg === 93 ? 0 : currentImg + 1)
+                    }
+                  />
+                  <img
+                    src={`/homePage/slideShowImgs/img${plus2Slide}.jpg`}
+                    alt=""
+                    onClick={() => setCurrentImg(plus2Slide)}
+                  />
+                </>
+              )}
+            </div>
+          );
+        })}
+
         <IoIosArrowForward onClick={nextImg} className="arrow" />
       </div>
     </section>
