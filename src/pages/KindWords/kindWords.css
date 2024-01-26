@@ -14,8 +14,8 @@ main {
 .banner {
   width: 90vw;
   height: 50vh;
-  background-image: url("../../../public/kindWordsPage/bannerImgCopy1.jpeg");
-  background-position: 50% 50%;
+  background-image: url("../../../public/kindWordsPage/bannerImg.jpg");
+  background-position: 0% 44%;
   background-size: cover;
   display: flex;
   flex-direction: column;

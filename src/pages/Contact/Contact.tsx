@@ -20,6 +20,7 @@ function Contact() {
             <a
               href="https://unscriptedforphotographers.com/b/OwxrE2lhk9nVqJ"
               className="section1Btn"
+              target="_blank"
             >
               COMPLETE THIS BOOKING FORM
             </a>
@@ -32,6 +33,7 @@ function Contact() {
             <a
               href={`https://www.instagram.com/si.lovelymoments?igsh=NWxhbnUyOGhianRr&utm_source=qr`}
               className="section1Btn"
+              target="_blank"
             >
               INSTAGRAM @si.lovelymoments
             </a>
@@ -46,6 +48,7 @@ function Contact() {
             <a
               href={`https://silovelymoments.etsy.com/`}
               className="section1Btn"
+              target="_blank"
             >
               LANDSCAPES AVAILIBLE THROUGH ETSY
             </a>

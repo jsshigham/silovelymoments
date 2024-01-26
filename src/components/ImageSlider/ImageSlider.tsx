@@ -6,7 +6,7 @@ const ImageSlider = () => {
   const [currentImg, setCurrentImg] = useState(Math.floor(Math.random() * 94));
 
   useEffect(() => {
-    const intervalId = setInterval(nextImg, 7000);
+    const intervalId = setInterval(nextImg, 3000);
 
     return () => clearInterval(intervalId);
   });

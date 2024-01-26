@@ -19,13 +19,6 @@ function Home() {
 
   return (
     <main className="homePage">
-      <section className="homeSection1">
-        <img
-          className="logo"
-          src="/si.lovelymoments_logo.png"
-          alt="Si Lovely Moments Logo"
-        />
-      </section>
       <section className="homePageSection2">
         {section2Images.map((image) => (
           <img

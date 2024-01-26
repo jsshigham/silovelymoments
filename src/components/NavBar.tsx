@@ -23,33 +23,16 @@ function NavBar() {
 
   const linksAll = [...links1, ...links2];
 
-  const titleDecor = [
-    "•",
-    "•",
-    "•",
-    "•",
-    "•",
-    "•",
-    "•",
-    "•",
-    "•",
-    "•",
-    "•",
-    "•",
-    "•",
-    "•",
-  ];
-
   return (
     <header className="navBarHeader">
       {smallScreenSize ? (
         <nav className="smallNavBar ">
-          <a className="navBar-links" id="navBar-title-small" href="/">
-            {titleDecor.map((decor, index) => (
-              <span key={index} className="navBar-links" id="navBarDecor">
-                {decor}
-              </span>
-            ))}
+          <a id="navBar-title-small" href="/">
+            <img
+              className="logo"
+              src="/si.lovelymoments_logo.png"
+              alt="Si Lovely Moments Logo"
+            />
           </a>
           <button
             onClick={() => setIsNavBarOpen((prev) => !prev)}
@@ -88,12 +71,12 @@ function NavBar() {
               {link.title}
             </a>
           ))}
-          <a className="navBar-links" id="navBar-title-big" href="/">
-            {titleDecor.map((decor, index) => (
-              <span key={index} className="navBar-links" id="navBarDecor">
-                {decor}
-              </span>
-            ))}
+          <a id="navBar-title-big" href="/">
+            <img
+              className="logo"
+              src="/si.lovelymoments_logo.png"
+              alt="Si Lovely Moments Logo"
+            />
           </a>
 
           {links2.map((link) => (
