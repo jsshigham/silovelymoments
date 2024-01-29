@@ -10,20 +10,25 @@ interface TileProps {
 const KindWordsTile: React.FC<TileProps> = ({ photo, quote, name, number }) => {
   return (
     <div className="tile">
-      <div className="topOfTile">
-        <div className="tileImgDiv">
+      <div className="tileTop">
+        <div className="tileImg">
           {photo.includes("landscape") ? (
-            <img className="tileLandscape" src={photo} alt={`Tile ${number}`} />
+            <div className="tileImgDiv">
+              <img
+                className="tileLandscape"
+                src={photo}
+                alt={`Tile ${number}`}
+              />
+            </div>
           ) : (
             <img className="tilePortrait" src={photo} alt={`Tile ${number}`} />
           )}
         </div>
-        <div className="number">{number}</div>
+        <div className="content">
+          <p>{quote}</p>
+        </div>
       </div>
-      <div className="content">
-        <p>{quote}</p>
-        <p className="name">{name}</p>
-      </div>
+      <p className="name">{name}</p>
     </div>
   );
 };

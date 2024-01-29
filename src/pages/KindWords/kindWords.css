@@ -74,6 +74,14 @@ main {
   /* align-items: flex-start; */
   width: 100%;
 }
+.tileTop {
+  width: 100%;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2em;
+}
 
 .tile {
   width: 47.5%;
@@ -127,23 +135,32 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  font-size: 0.8em;
+  font-size: 1em;
   letter-spacing: 0.1em;
   letter-spacing: 0.1em;
-  font-weight: 100;
+  font-weight: 200;
   text-align: left;
+  margin: 0;
 }
 
 .name {
   align-self: flex-end;
   font-weight: 200;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Montserrat", sans-serif;
 }
 
 .number {
   margin-top: 10px;
   font-size: 1em;
+}
+
+@media screen and (max-width: 1500px) {
+  .tileTop {
+    flex-direction: column;
+    align-items: center;
+    gap: 0em;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -161,6 +178,10 @@ main {
   }
   .tile {
     width: 90%;
+  }
+
+  .tileTop {
+    gap: 1em;
   }
 
   .tileImgDiv {
