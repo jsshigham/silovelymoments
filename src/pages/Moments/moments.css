@@ -39,8 +39,8 @@
 }
 
 .momentsTileImg {
-  width: 26vw;
-  left: -3vw;
+  width: 20vw;
+  height: 30vw;
   object-fit: cover;
   position: relative;
 }

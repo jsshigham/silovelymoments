@@ -46,7 +46,7 @@ const ImageSlider = () => {
               {index === currentImg && (
                 <img
                   className="currentImgLg"
-                  src={`/homePage/slideShowImgs/${image}`}
+                  src={`/homePage/slideShowImages/${image}`}
                   alt=""
                 />
               )}
@@ -66,12 +66,12 @@ const ImageSlider = () => {
               {index === currentImg && (
                 <>
                   <img
-                    src={`/homePage/slideShowImgs/img${minus2Slide}.jpg`}
+                    src={`/homePage/slideShowImages/imgg${minus2Slide}.jpg`}
                     alt=""
                     onClick={() => setCurrentImg(minus2Slide)}
                   />
                   <img
-                    src={`/homePage/slideShowImgs/img${
+                    src={`/homePage/slideShowImages/imgg${
                       currentImg === 0 ? 93 : currentImg - 1
                     }.jpg`}
                     alt=""
@@ -80,11 +80,11 @@ const ImageSlider = () => {
                     }
                   />
                   <img
-                    src={`/homePage/slideShowImgs/img${currentImg}.jpg`}
+                    src={`/homePage/slideShowImages/imgg${currentImg}.jpg`}
                     alt=""
                   />
                   <img
-                    src={`/homePage/slideShowImgs/img${
+                    src={`/homePage/slideShowImages/imgg${
                       currentImg === 93 ? 0 : currentImg + 1
                     }.jpg`}
                     alt=""
@@ -93,7 +93,7 @@ const ImageSlider = () => {
                     }
                   />
                   <img
-                    src={`/homePage/slideShowImgs/img${plus2Slide}.jpg`}
+                    src={`/homePage/slideShowImages/imgg${plus2Slide}.jpg`}
                     alt=""
                     onClick={() => setCurrentImg(plus2Slide)}
                   />

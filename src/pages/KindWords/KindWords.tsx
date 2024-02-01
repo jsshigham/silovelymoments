@@ -46,7 +46,7 @@ function KindWords() {
     },
     {
       id: ".06",
-      photo: "/kindWordsPage/tilePhotos/tile6landscape.jpeg",
+      photo: "/kindWordsPage/tilePhotos/tile6.jpeg",
       quote: `Thank you so much!! They are so beautiful! Best photographer I could’ve asked for!`,
       name: "JESSE & DELANEY",
     },
