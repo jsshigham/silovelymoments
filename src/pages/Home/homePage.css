@@ -88,6 +88,7 @@ main {
   font-size: 2em;
   text-align: center;
   opacity: 70%;
+  font-weight: 300;
 }
 
 .section4Imgs {
@@ -100,7 +101,39 @@ main {
 }
 
 .sideBySideImgs {
-  height: 90%;
+  height: 81vh;
+}
+
+.section4ButtonsDiv {
+  height: 81vh;
+  width: 27vw;
+  background-color: var(--accent-background);
+  border-radius: 5px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+.section4Buttons {
+  text-align: center;
+  width: 60%;
+  padding: 1em 4.5em;
+  /* margin: 5em 0; */
+  border-radius: 2px;
+  border: solid 1px var(--primary-headings);
+  text-decoration: none;
+  font-size: 0.75em;
+  color: var(--primary-headings);
+  cursor: pointer;
+}
+.section4Buttons:hover {
+  background-color: var(--primary-headings);
+  color: var(--button-text-hover);
+  transition: 0.5s;
+  cursor: pointer;
 }
 .sliderSection {
   display: flex;
@@ -212,6 +245,11 @@ main {
   .section4Imgs {
     height: unset;
     flex-direction: column;
+  }
+  .section4ButtonsDiv {
+    width: 80%;
+    height: 50vh;
+    gap: 2em;
   }
 
   .sideBySideImgs {

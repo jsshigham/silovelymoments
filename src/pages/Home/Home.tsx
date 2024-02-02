@@ -58,6 +58,17 @@ function Home() {
           alt="Father, Mother, Daughter and Son enjoying the beach"
           className="sideBySideImgs"
         />
+        <div className="section4ButtonsDiv">
+          <a className="section4Buttons" href="/moments">
+            SEE THE MOMENTS I CAPTURE
+          </a>
+          <a className="section4Buttons" href="/sessions">
+            SEE THE SESSIONS I OFFER
+          </a>
+          <a className="section4Buttons" href="/contact">
+            BOOK A SESSION
+          </a>
+        </div>
         <img
           src="/sessionsPage/section1Img.jpeg"
           alt=""

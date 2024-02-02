@@ -29,15 +29,15 @@ function Sessions() {
 
         <div className="section1SessionsContainer">
           <div className="sessionDiv">
-            <h4 className="sessionDivH4">Lifestyle Sessions</h4>
-            <div className="lifestyleTypes">
+            <h4 className="sessionDivH4">Lifestyle</h4>
+            {/* <div className="lifestyleTypes">
               <span>Family</span>
               <span>Couples</span>
               <span>Maternity</span>
               <span>Newborn</span>
               <span>Graduation</span>
               <span>Engagement</span>
-            </div>
+            </div> */}
             <h6 className="sessionDivH6">Includes:</h6>
             <ul className="sessionUl">
               <li>High-resolution images</li>
@@ -49,23 +49,21 @@ function Sessions() {
             </ul>
             <h6 className="sessionDivH6">Add on:</h6>
             <ul className="sessionUl">
-              <li>Location that requires travel and/or hotel</li>
-              <li>(I love to capture photos in new places)</li>
-              <li>Additional time</li>
+              <li>Location that requires travel and/or hotel:</li>
+              <li>I love to capture photos in new places</li>
               <li>
-                (I want to be able to make your session everything you
-                want/need)
+                Additional time: I want to be able to make your session
+                everything you want/need
               </li>
-              <li>Special requests</li>
+
+              <li>Special requests: champagne, flowers, a sign, music, etc.</li>
             </ul>
             <h4 className="price sessionDivH4">Prices starting at $200</h4>
           </div>
 
           <div className="sessionDiv">
-            <h4 className="sessionDivH4">
-              Wedding <br />{" "}
-            </h4>
-            <span>Inquire for different pricing packages</span>
+            <h4 className="sessionDivH4">Wedding / Elopements</h4>
+            {/* <span>Inquire for different pricing packages</span> */}
             <h6 className="sessionDivH6">Information:</h6>
             <ul className="sessionUl">
               <li>Planning consultation included in all packages</li>
@@ -99,6 +97,7 @@ function Sessions() {
                 Travel not included in price (required for session 1 hours +
                 away)
               </li>
+              <li>All shoots are strictly private and discrete.</li>
             </ul>
             <h6 className="sessionDivH6">Add on:</h6>
             <ul className="sessionUl">
@@ -116,6 +115,7 @@ function Sessions() {
           {/* </div> */}
         </div>
       </section>
+      <h6 className="disclaimer">*Inquire for different pricing packages</h6>
 
       <section className="backgroundImgSection">
         <span className="bottomTextSm">MEMORIES WORTH EVERYTHING</span>

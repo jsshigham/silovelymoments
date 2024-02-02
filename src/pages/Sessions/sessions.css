@@ -48,7 +48,7 @@
   width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 10px;
   background-color: var(--accent-background);
   padding: 10px;
@@ -98,6 +98,12 @@
 
 .price {
   justify-self: flex-end;
+}
+
+.disclaimer {
+  font-size: 1em;
+  font-weight: 200;
+  color: var(--primary-headings);
 }
 
 .detailsSection {
