@@ -76,6 +76,7 @@
 
   .momentsTileImg {
     width: 100%;
+    height: unset;
     left: unset;
     object-fit: unset;
     position: unset;

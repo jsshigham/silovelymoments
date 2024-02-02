@@ -52,11 +52,18 @@ function Home() {
         </div>
       </section>
       <span className="homePageText">MOMENTS WORTH EVERYTHING</span>
-      <img
-        src="/homePage/section4/imgLarge.jpeg"
-        alt="Father, Mother, Daughter and Son enjoying the beach"
-        id="section4ImgLarge"
-      />
+      <div className="section4Imgs">
+        <img
+          src="/homePage/section4/imgLarge.jpeg"
+          alt="Father, Mother, Daughter and Son enjoying the beach"
+          className="sideBySideImgs"
+        />
+        <img
+          src="/sessionsPage/section1Img.jpeg"
+          alt=""
+          className="sideBySideImgs"
+        />
+      </div>
       <span className="homePageText">CAPTURE THE LOVE</span>
       <ImageSlider />
     </main>

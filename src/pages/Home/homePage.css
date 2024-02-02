@@ -90,10 +90,18 @@ main {
   opacity: 70%;
 }
 
-#section4ImgLarge {
-  width: 90%;
+.section4Imgs {
+  height: 90vh;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
+.sideBySideImgs {
+  height: 90%;
+}
 .sliderSection {
   display: flex;
   flex-direction: column;
@@ -199,6 +207,16 @@ main {
 
   .section3ImgSmall {
     width: 90%;
+  }
+
+  .section4Imgs {
+    height: unset;
+    flex-direction: column;
+  }
+
+  .sideBySideImgs {
+    height: unset;
+    width: 100%;
   }
 
   .sliderSection {
