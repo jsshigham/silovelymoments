@@ -62,13 +62,13 @@ function Sessions() {
           </div>
 
           <div className="sessionDiv">
-            <h4 className="sessionDivH4">Wedding / Elopements</h4>
+            <h4 className="sessionDivH4">Wedding</h4>
             {/* <span>Inquire for different pricing packages</span> */}
             <h6 className="sessionDivH6">Information:</h6>
             <ul className="sessionUl">
               <li>Planning consultation included in all packages</li>
               <li>Sneak peeks within 24 hours</li>
-              <li>Gallery delivered within 4-6 weeks</li>
+              <li>Gallery delivered within 4 weeks</li>
               <li>Balance due one month before wedding</li>
               <li>30% non-refundable deposit due at booking</li>
               <li>
@@ -78,12 +78,13 @@ function Sessions() {
             </ul>
             <h6 className="sessionDivH6">Add on:</h6>
             <ul className="sessionUl">
+              <li>Film Photos</li>
               <li>Boudoir Session</li>
               <li>Rehearsal dinner coverage</li>
               <li>Second shooter</li>
               <li>Extra hour(s) of coverage</li>
             </ul>
-            <h4 className="price sessionDivH4">Prices start at $2,000</h4>
+            <h4 className="price sessionDivH4">Prices start at $2,400</h4>
           </div>
           <div className="sessionDiv">
             <h4 className="sessionDivH4">Boudoir</h4>

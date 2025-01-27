@@ -133,9 +133,15 @@
   align-items: center;
   width: 90vw;
   min-height: 90vh;
-  background: #fff url(../../../public/sessionsPage/backgroundImgCopy.jpeg)
-    no-repeat 20% 30%;
+  background: #fff url(../../../public/sessionsPage/backgroundImg.jpg) no-repeat
+    center center;
+  background-size: cover;
   color: #fff;
+}
+
+.backgroundImgSection * {
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.6),
+    /* Darker inner glow */ 0 0 12px rgba(0, 0, 0, 0.4); /* Darker outer glow */
 }
 
 .bottomTextSm {
