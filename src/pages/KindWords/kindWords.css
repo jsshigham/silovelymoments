@@ -26,6 +26,11 @@ main {
   font-family: "Montserrat", sans-serif;
 }
 
+.banner * {
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.6),
+    /* Darker inner glow */ 0 0 12px rgba(0, 0, 0, 0.4); /* Darker outer glow */
+}
+
 .bannerText {
   width: 40%;
   font-size: 2em;

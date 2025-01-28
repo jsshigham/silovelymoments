@@ -1,13 +1,8 @@
-.sessionsHeading {
-  font-weight: 200;
-  font-size: 1em;
-}
-
 .sessionsSection1 {
   width: 90vw;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -19,110 +14,24 @@
   margin-block-end: unset;
 }
 
-.section1Container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.section1ImgDiv {
-  width: 30%;
-}
-
-.section1Img {
-  width: 100%;
-}
-
 .section1SessionsContainer {
   display: flex;
-  justify-content: space-between;
-  height: 80vh;
+  justify-content: center;
+
   align-items: flex-start;
   width: 100%;
-
   text-align: left;
 }
 
-.sessionDiv {
-  height: 100%;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
-  background-color: var(--accent-background);
-  padding: 10px;
-  border-radius: 20px;
-  font-weight: 200;
-}
-
-.sessionUl {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  list-style: none;
-  gap: 0;
-  margin: 0;
-}
-
-.sessionUl li {
-  margin: 0;
-}
-
-.lifestyleTypes {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  list-style: none;
-  gap: 0.5em;
-}
-
-.sessionDivH4 {
-  text-align: center;
-  align-self: center;
-  font-size: 1em;
-  font-weight: 400;
-  margin: 0;
-}
-
-.sessionDivH6 {
-  font-size: 1em;
-  font-weight: 400;
-  margin: 0;
-}
-
-.price {
-  justify-self: flex-end;
+#pricingImage {
+  height: 80vh;
+  border-radius: 10px;
 }
 
 .disclaimer {
   font-size: 1em;
   font-weight: 200;
   color: var(--primary-headings);
-}
-
-.detailsSection {
-  padding-top: 100px;
-  width: 90vw;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  font-family: var(--secondary-font-family);
-  font-size: min(0.875rem, 1rem + -0.14vh);
-  text-align: left;
-}
-
-.detailsSection p {
-  width: 100%;
-}
-
-.bold {
-  font-weight: 600;
 }
 
 .backgroundImgSection {
@@ -169,20 +78,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1375px) {
-  .section1ImgDiv {
-    height: unset;
-  }
-}
-
 @media screen and (max-width: 1023px) {
-  .section1ImgDiv {
-    width: 90vw;
-    height: 90vw;
-  }
-  .section1Img {
-    width: 100%;
-  }
   .sessionsSection1 {
     gap: 50px;
   }
@@ -193,16 +89,9 @@
     height: unset;
     gap: 20px;
   }
-
-  .sessionDiv {
-    width: 95%;
-    height: unset;
-  }
-
   .backgroundImgSection {
     min-height: 75vh;
   }
-
   .bottomTextLg {
     width: 60%;
   }

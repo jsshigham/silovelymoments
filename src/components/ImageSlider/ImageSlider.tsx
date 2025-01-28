@@ -2,8 +2,12 @@ import { useEffect, useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { imageSliderImgs } from "./sliderData";
 
+const TOTAL_IMAGES = 49; // Total number of images
+
 const ImageSlider = () => {
-  const [currentImg, setCurrentImg] = useState(Math.floor(Math.random() * 94));
+  const [currentImg, setCurrentImg] = useState(
+    Math.floor(Math.random() * TOTAL_IMAGES)
+  );
 
   useEffect(() => {
     const intervalId = setInterval(nextImg, 3000);
@@ -12,27 +16,16 @@ const ImageSlider = () => {
   });
 
   const nextImg = () =>
-    currentImg === 93 ? setCurrentImg(0) : setCurrentImg(currentImg + 1);
+    currentImg === TOTAL_IMAGES - 1
+      ? setCurrentImg(0)
+      : setCurrentImg(currentImg + 1);
   const lastImg = () =>
-    currentImg === 0 ? setCurrentImg(93) : setCurrentImg(currentImg - 1);
+    currentImg === 0
+      ? setCurrentImg(TOTAL_IMAGES - 1)
+      : setCurrentImg(currentImg - 1);
 
-  let minus2Slide: number;
-  let plus2Slide: number;
-  if (currentImg === 0) {
-    minus2Slide = 92;
-  } else if (currentImg === 1) {
-    minus2Slide = 93;
-  } else {
-    minus2Slide = currentImg - 2;
-  }
-
-  if (currentImg === 93) {
-    plus2Slide = 1;
-  } else if (currentImg === 92) {
-    plus2Slide = 0;
-  } else {
-    plus2Slide = currentImg + 2;
-  }
+  const minus2Slide = (currentImg - 2 + TOTAL_IMAGES) % TOTAL_IMAGES;
+  const plus2Slide = (currentImg + 2) % TOTAL_IMAGES;
 
   return (
     <section className="sliderSection">
@@ -72,11 +65,13 @@ const ImageSlider = () => {
                   />
                   <img
                     src={`/homePage/slideShowImages/imgg${
-                      currentImg === 0 ? 93 : currentImg - 1
+                      currentImg === 0 ? TOTAL_IMAGES - 1 : currentImg - 1
                     }.jpg`}
                     alt=""
                     onClick={() =>
-                      setCurrentImg(currentImg === 0 ? 93 : currentImg - 1)
+                      setCurrentImg(
+                        currentImg === 0 ? TOTAL_IMAGES - 1 : currentImg - 1
+                      )
                     }
                   />
                   <img
@@ -85,11 +80,13 @@ const ImageSlider = () => {
                   />
                   <img
                     src={`/homePage/slideShowImages/imgg${
-                      currentImg === 93 ? 0 : currentImg + 1
+                      currentImg === TOTAL_IMAGES - 1 ? 0 : currentImg + 1
                     }.jpg`}
                     alt=""
                     onClick={() =>
-                      setCurrentImg(currentImg === 93 ? 0 : currentImg + 1)
+                      setCurrentImg(
+                        currentImg === TOTAL_IMAGES - 1 ? 0 : currentImg + 1
+                      )
                     }
                   />
                   <img
