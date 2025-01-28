@@ -26,8 +26,8 @@ function Sessions() {
             id="pricingImage"
             src={
               isMobile
-                ? "/public/sessionsPage/pricingPortrait.png"
-                : "/public/sessionsPage/pricingLandscape.png"
+                ? "/sessionsPage/pricingPortrait.png"
+                : "/sessionsPage/pricingLandscape.png"
             }
             alt="Description of the different services offered"
           />
