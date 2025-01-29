@@ -7,9 +7,12 @@ function Home() {
   // const { screenWidth } = useContext(MyContext)!;
 
   const section2Images = [
-    { title: "img1", alt: "Wedding Couple with close up on flowers" },
-    { title: "img2", alt: "Baby lying on a bed" },
-    { title: "img3", alt: "Man holding a woman in a corn field" },
+    { title: "img1", alt: "Wedding Couple sharing a moment by the ocean" },
+    {
+      title: "img2",
+      alt: "Black and white photo of a groom holding their bride",
+    },
+    { title: "img3", alt: "Cowboy kissing his bride at sunset" },
   ];
   const section3ImagesSmall = [
     { title: "imgSmall1", alt: "Kids playing in a park" },
