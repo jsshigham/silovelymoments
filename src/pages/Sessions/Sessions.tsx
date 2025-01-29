@@ -1,20 +1,20 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import "./sessions.css";
 
 function Sessions() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+  // const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 1024);
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsMobile(window.innerWidth < 1024);
+  //   };
 
-    window.addEventListener("resize", handleResize);
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   return (
     <main>
@@ -24,15 +24,15 @@ function Sessions() {
         <div className="section1SessionsContainer">
           <img
             id="pricingImage"
-            src={
-              isMobile
-                ? "/sessionsPage/pricingPortrait.png"
-                : "/sessionsPage/pricingLandscape.png"
-            }
+            src="/sessionsPage/pricingPortrait.PNG"
+            // src={
+            //   isMobile
+            //     ? "/sessionsPage/pricingPortrait.png"
+            //     : "/sessionsPage/pricingPort.png"
+            // }
             alt="Description of the different services offered"
           />
         </div>
-        <h6 className="disclaimer">*Inquire for different pricing packages</h6>
       </section>
 
       <section className="backgroundImgSection">
